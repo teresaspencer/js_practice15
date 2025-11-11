@@ -18,11 +18,17 @@ given in the comments.
 // Use Fetch with Async/Await to request
 // all the posts. The function should
 // return all the posts as JSON data.
+function getAllPosts() {
+
+}
 
 // 2) Create a function named "getAllUsers".
 // Use Fetch with Async/Await to request
 // all the users. The function should
 // return all the users as JSON data.
+function getAllUsers() {
+
+}
 
 // 3) Create a function named "getComments".
 // This function needs to accept a "postID"
@@ -33,6 +39,9 @@ given in the comments.
 // The function should return all the
 // comments for the requested postID
 // as JSON data.
+function getComments(postID) {
+
+}
 
 // 4) Create a function named "getUser".
 // This function needs to accept a "userID"
@@ -40,6 +49,9 @@ given in the comments.
 // Use Fetch with Async/Await to request
 // the data for the requested user.
 // The function should return JSON data.
+function getUser(userID) {
+
+}
 
 // 5) Create a function named "getTodosForUser".
 // This function needs to accept a "userID"
@@ -47,3 +59,6 @@ given in the comments.
 // Use Fetch with Async/Await to request
 // all of the todos for the requested user.
 // The function should return JSON data.
+function getTodosForUser(userID) {
+
+}
