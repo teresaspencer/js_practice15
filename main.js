@@ -44,8 +44,10 @@ async function getAllUsers() {
 // The function should return all the
 // comments for the requested postID
 // as JSON data.
-function getComments(postID) {
-
+async function getComments(postID) {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${postID}/comments`);
+    const jsonCommentData = await response.json();
+    return jsonCommentData;
 }
 
 // 4) Create a function named "getUser".
@@ -54,8 +56,10 @@ function getComments(postID) {
 // Use Fetch with Async/Await to request
 // the data for the requested user.
 // The function should return JSON data.
-function getUser(userID) {
-
+async function getUser(userID) {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/users/${userID}`);
+    const jsonUserData = await response.json();
+    return jsonUserData;
 }
 
 // 5) Create a function named "getTodosForUser".
@@ -64,6 +68,8 @@ function getUser(userID) {
 // Use Fetch with Async/Await to request
 // all of the todos for the requested user.
 // The function should return JSON data.
-function getTodosForUser(userID) {
-
+async function getTodosForUser(userID) {
+    const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${userID}`);
+    const jsonTodoData = await response.json();
+    return jsonTodoData;
 }
