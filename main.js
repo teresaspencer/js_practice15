@@ -69,7 +69,7 @@ async function getUser(userID) {
 // all of the todos for the requested user.
 // The function should return JSON data.
 async function getTodosForUser(userID) {
-    const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${userID}`);
+    const response = await fetch(`https://jsonplaceholder.typicode.com/todos?userId=${userID}`);
     const jsonTodoData = await response.json();
     return jsonTodoData;
 }
