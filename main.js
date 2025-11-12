@@ -18,15 +18,20 @@ given in the comments.
 // Use Fetch with Async/Await to request
 // all the posts. The function should
 // return all the posts as JSON data.
-function getAllPosts() {
-
+const getAllPosts = async () => {
+    const posts = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const jsonPostData = await posts.json();
+    return jsonPostData;
 }
 
 // 2) Create a function named "getAllUsers".
 // Use Fetch with Async/Await to request
 // all the users. The function should
 // return all the users as JSON data.
-function getAllUsers() {
+async function getAllUsers() {
+    const users = await fetch("https://jsonplaceholder.typicode.com/users");
+    const jsonUserData = await users.json();
+    return jsonUserData;
 
 }
 
